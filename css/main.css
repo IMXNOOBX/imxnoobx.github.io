@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
  /*------------------------------------------*/
   cursor: url("https://raw.githubusercontent.com/IMXNOOBX/noob-main/main/mouse/default.svg"), auto;
+  transition: all .5s;
 }
 
 html {
@@ -160,4 +161,48 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/*-------------------------------------------------[Phone / Small Screen Support]-------------------------------------------------*/
+
+@media (max-width:650px){
+
+  h1 {
+    font-size: 500%;
+  }
+
+  ul{
+    width: 400px;
+  }
+
+  ul li a{
+    padding: 15px 25px;
+    z-index: 1000;
+  }
+
+  ul li a ion-icon{
+    font-size: 1.5em;
+  }
+
+}
+
+@media (max-width:400px){
+
+  h1 {
+    font-size: 400%;
+  }
+
+  ul{
+    width: 350px;
+  }
+
+  ul li a{
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+
+  ul li a ion-icon{
+    font-size: 1.5em;
+  }
+
 }
